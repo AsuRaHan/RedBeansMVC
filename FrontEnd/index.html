@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
     <head>
+        <link rel="shortcut icon" href="/favicon.ico">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{>title<}</title>
+        <title><{title}></title>
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Bootstrap core CSS -->
@@ -13,7 +14,7 @@
         <link href="/css/mdb.css" rel="stylesheet">
         <!-- Your custom styles (optional) -->
         <link href="/css/style.css" rel="stylesheet">
-        <script src="/js/vue.js"></script>
+        <script src="/js/vue.min.js"></script>
         <script src="/js/vuex.js"></script>
     </head>
 
@@ -22,8 +23,8 @@
         
         <header class="jumbotron text-center hdr">
             <div class="container">
-                <h1 class="h1-reponsive mb-4 mt-2 grey-text font-bold">Fluid jumbotron</h1>
-                <p class="lead grey-text">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                <h1 class="h1-reponsive mb-4 mt-2 font-bold">Fluid jumbotron</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
             </div>
         </header>
         
@@ -41,11 +42,9 @@
                         <a class="nav-link" href="/"><i class="fa fa-home"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-external-link"></i>Link 1</a>
+                        <a class="nav-link" href="/user"><i class="fa fa-user"></i>User</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-external-link"></i>Link 2</a>
-                    </li>
+                    
 
                 </ul>
             </div>
@@ -64,7 +63,7 @@
                     </ul>
                 </nav>
                 <main role="main" id="content" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                    {>content<}
+                    <{content}>
                 </main>
             </div>
         </div>
@@ -73,7 +72,7 @@
 
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="/">you site</a>
+                <a href="/">yousite.org</a>
             </div>
             <!-- Copyright -->
 

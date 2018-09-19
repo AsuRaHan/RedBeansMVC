@@ -1,6 +1,4 @@
-<?php
-
-defined('ROOT') OR die('No direct script access.');
+<?php defined('ROOT') OR die('No direct script access.');
 
 /**
  * Класс для работы с шаблонами
@@ -79,7 +77,8 @@ class Template {
         preg_match_all('/<{(.*?)}>/', $code, $subject, PREG_SET_ORDER);
         foreach ($subject as $value) {
             $tplVar = $this->VarGet($value[1]);
-//                var_dump($subject);
+//                var_dump($value);
+//                die();
 //            if($tplVar){
                 $code = preg_replace("/<{($value[1])}>/", $tplVar, $code);
 //            }
@@ -87,7 +86,7 @@ class Template {
 
 //                $code=preg_replace( '/{{(.*?)}}/', $tplVar, $code);
         }
-//        die();
+        
         return $code;
     }
 

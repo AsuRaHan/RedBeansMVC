@@ -1,0 +1,77 @@
+<!--<form class="form-signin" id="formreg" method="post" name="formreg" action="/user/registre/">
+
+
+    <h2>Регистрация</h2>
+    <input value="<{name}>" name="name" type="text" class="form-control" placeholder="Имя" required>
+    <input value="<{middlename}>" name="middlename" type="text" class="form-control" placeholder="Отчество" required>
+    <input value="<{surname}>" name="surname" type="text" class="form-control" placeholder="Фамилия" required>
+    <input value="<{email}>" name="email" type="email" class="form-control" placeholder="Адрес электронной почты" required>
+    <input value="<{login}>" id="login" name="login" type="text" class="form-control" placeholder="Ваш логин" required>
+    <input value="<{password}>" name="password" id="password" type="password" class="form-control" placeholder="пароль" required>
+    <input value="<{password}>" name="passwordonf" id="passwordonf" type="password" class="form-control" placeholder="пароль еще раз" required>
+    
+    <div class="row">
+        <div class="col">
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+            <div class="g-recaptcha" data-sitekey="6LeWUSIUAAAAAFddPz5BrbEeUHBnPonRTZgIafPL"></div>
+        </div>
+        <div class="col"><br/>
+            <button type="submit" class="btn btn-outline-primary">Зарегистрироватся</button>
+        </div>
+    </div>
+        
+    
+    
+    <div id="ErrorMsg"><{ErrorMsg}></div>
+    
+
+</form>-->
+
+<div class="col-md-6 mb-4 mx-auto">
+<br><br><br>
+    <!--Form with header-->
+    <form class="card" id="formreg" method="post" name="formreg" action="/user/registre/">
+        <div class="card-body">
+
+            <!--Header-->
+            <div class="form-header default-color-dark">
+                <h3><i class="fa fa-user"></i> Регистрация:</h3>
+            </div>
+
+            <!--Body-->
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <!--<input type="text" id="orangeForm-name" class="form-control">-->
+                <input value="<{login}>" id="orangeForm-name" name="login" type="text" class="form-control" required>
+                <label for="orangeForm-name">Ваш логин</label>
+            </div>
+            <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <!--<input type="text" id="orangeForm-email" class="form-control">-->
+                <input value="<{email}>" name="email" id="orangeForm-email" type="email" class="form-control" required>
+                <label for="orangeForm-email">Адрес электронной почты</label>
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <!--<input type="password" id="orangeForm-pass" class="form-control">-->
+                <input value="<{password}>" name="password" id="orangeForm-pass" type="password" class="form-control" required>
+                <label for="orangeForm-pass">Ваш пароль</label>
+            </div>
+            
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                
+                <input value="<{password}>" name="passwordonf" id="orangeForm-passwordonf" type="password" class="form-control" required>
+                <label for="orangeForm-passwordonf">Ваш пароль еще раз</label>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-deep-orange waves-effect waves-light">Зарегистрироватся</button>
+                
+            </div>
+            <div id="ErrorMsg"><{ErrorMsg}></div>
+        </div>
+    </form>
+    <!--/Form with header-->
+
+</div>

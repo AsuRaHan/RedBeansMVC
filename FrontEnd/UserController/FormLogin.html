@@ -1,0 +1,42 @@
+<div class="col-md-6 mb-4 pb-5 mx-auto">
+<br><br><br>
+    <div class="card">
+        <form class="card-body" role="form" method="POST" action="/user/login/">
+        
+
+            <!--Header-->
+            <div class="form-header default-color">
+                <h3><i class="fa fa-lock"></i> Вход пользователя:</h3>
+            </div>
+
+            <!--Body-->
+            <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input value="<{email}>" name="email" type="email" id="defaultForm-email" class="form-control" required>
+                <label for="defaultForm-email" class="">Адрес электронной почты</label>
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input name="password" id="defaultForm-pass" type="password" class="form-control" required>
+                <label for="defaultForm-pass" class="">Ваш пароль</label>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-default waves-effect waves-light">Войти</button>
+            </div>
+            <div class="modal-footer">
+                <div class="options">
+                    <p>У вас нет учетной записи?
+                        <a href="/user/registre">Зарегистрируйтесь</a>
+                    </p>
+<!--                    <p>Forgot
+                        <a href="#">Password?</a>
+                    </p>-->
+                </div>
+            </div>
+        
+        </form>
+    </div>
+
+</div>

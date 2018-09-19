@@ -19,7 +19,7 @@
                 posts: []
             },
             created() {
-                fetch('https://jsonplaceholder.typicode.com/posts/{>AppPostId<}')
+                fetch('https://jsonplaceholder.typicode.com/posts/<{AppPostId}>')
                         .then((response) => {
                         if (response.ok) {
                             return response.json();
