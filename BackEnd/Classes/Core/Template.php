@@ -76,13 +76,13 @@ class Template {
     }
 
     public function Code($code) {
-        preg_match_all('/{>(.*?)<}/', $code, $subject, PREG_SET_ORDER);
+        preg_match_all('/<{(.*?)}>/', $code, $subject, PREG_SET_ORDER);
         foreach ($subject as $value) {
             $tplVar = $this->VarGet($value[1]);
 //                var_dump($subject);
-            if($tplVar){
-                $code = preg_replace("/{>($value[1])<}/", $tplVar, $code);
-            }
+//            if($tplVar){
+                $code = preg_replace("/<{($value[1])}>/", $tplVar, $code);
+//            }
             
 
 //                $code=preg_replace( '/{{(.*?)}}/', $tplVar, $code);
