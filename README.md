@@ -1,2 +1,3 @@
 # RedBeansMVC
-RedBeansMVC
+RedBeansMVC - попытка скрестить ORM [RedBeanPHP](https://redbeanphp.com/) и свой самописный фреймворк. 
+вобщем получается довольно неплохо, решил создать полноценную Систему Управления Контентом
